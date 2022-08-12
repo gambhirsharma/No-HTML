@@ -1,0 +1,113 @@
+/* Made by @gambhirsharma on 12 August 2022
+
+ ##########################################
+-- Concept used
+- Responsive Units (vmin)
+- Used Linear gradient to make boxes
+- Used Radial gradient to make circles
+- body::after,body::before
+
+-- Tested
+- Firefox (Windows/Ubuntu)
+- Brave
+- Edge
+
+Follow me on twitter for more
+https://www.twitter.com/gambhir_sharma/
+*/
+
+*,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color var */
+  --black: #000;
+  --white: #fff;
+
+  --first: #f24d18;
+  --second: #ff7362;
+  --third: #a359ff;
+  --fourth: #13bdfe;
+  --fifth: #02d084;
+  --sixth: red;
+
+  /*  all dimensions var  */
+  --size: 10vmin;
+
+  /*  Position  */
+  --po1: 30vmin 20vmin;
+  --po2: 50vmin 20vmin;
+  --po3: 30vmin 40vmin;
+  --po4: 50vmin 40vmin;
+  --po5: 30vmin 60vmin;
+}
+*::after,
+*::before {
+  content: "";
+  display: flex;
+  position: absolute;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--black);
+}
+body::before {
+  position: absolute;
+  height: 80vmin;
+  width: 80vmin;
+  background: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4vmin;
+}
+body::after {
+  height: 80vmin;
+  width: 80vmin;
+  position: absolute;
+  background-repeat: no-repeat;
+  background: radial-gradient(
+      circle at var(--po1),
+      var(--first) 0%,
+      var(--first) var(--size),
+      transparent 0%
+    ),
+    linear-gradient(var(--first), var(--first)) 30vmin 10vmin / 10vmin 20vmin
+      no-repeat,
+    radial-gradient(
+      circle at var(--po2),
+      var(--second) 0%,
+      var(--second) var(--size),
+      transparent 0%
+    ),
+    linear-gradient(var(--second), var(--second)) 40vmin 10vmin / 10vmin 20vmin
+      no-repeat,
+    radial-gradient(
+      circle at var(--po3),
+      var(--third) 0%,
+      var(--third) var(--size),
+      transparent 0%
+    ),
+    linear-gradient(var(--third), var(--third)) 30vmin 30vmin / 10vmin 20vmin
+      no-repeat,
+    radial-gradient(
+      circle at var(--po4),
+      var(--fourth) 0%,
+      var(--fourth) var(--size),
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at var(--po5),
+      var(--fifth) 0%,
+      var(--fifth) var(--size),
+      transparent 0%
+    ),
+    linear-gradient(var(--fifth), var(--fifth)) 30vmin 50vmin / 10vmin 10vmin
+      no-repeat;
+}
