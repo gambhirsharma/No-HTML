@@ -1,0 +1,139 @@
+*,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+
+  /* variables */
+  --black: #000;
+  --white: #fff;
+
+  --green: #2EB67D;
+  --red: #E01E5A;
+  --blue: #36C5F0;
+  --yellow: #ECB22E;
+}
+*::before,
+*::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+body {
+  background-color: var(--black);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body::before {
+  height: 80vmin;
+  width: 80vmin;
+  /* background: linear-gradient(var(--white), var(--white)) 50% 50%/ 80vmin 0.5vmin
+      no-repeat,
+    linear-gradient(var(--white), var(--white)) 50% 50%/ 0.5vmin 80vmin no-repeat;
+  border: solid var(--white); */
+  /* background-color: var(--black); */
+  /* border: solid var(--white); */
+  background-color: var(--white);
+}
+body::after {
+  height: 80vmin;
+  width: 80vmin;
+  position: absolute;
+  background-repeat: no-repeat;
+  background:
+  /* green part */ linear-gradient(var(--green), var(--green)) 60%
+      20%/10vmin 20vmin no-repeat,
+    linear-gradient(var(--green), var(--green)) 74% 41%/5vmin 5vmin no-repeat,
+    radial-gradient(
+      circle at 75.4% 38.4%,
+      var(--green) 0%,
+      var(--green) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 58.7% 40%,
+      var(--green) 0%,
+      var(--green) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 58.7% 15%,
+      var(--green) 0%,
+      var(--green) 5vmin,
+      transparent 0%
+    ),
+    /* blue part */ linear-gradient(var(--blue), var(--blue)) 20% 40%/20vmin
+      10vmin no-repeat,
+    linear-gradient(var(--blue), var(--blue)) 42.8% 26.9%/5vmin 5vmin no-repeat,
+    radial-gradient(
+      circle at 40% 25%,
+      var(--blue) 0%,
+      var(--blue) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 15% 41.3%,
+      var(--blue) 0%,
+      var(--blue) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 40% 41.3%,
+      var(--blue) 0%,
+      var(--blue) 5vmin,
+      transparent 0%
+    ),
+    /* red-part */ linear-gradient(var(--red), var(--red)) 40% 80%/10vmin 20vmin
+      no-repeat,
+    linear-gradient(var(--red), var(--red)) 27.2% 58%/5vmin 5vmin no-repeat,
+    radial-gradient(
+      circle at 25.5% 60.5%,
+      var(--red) 0%,
+      var(--red) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 41.2% 60%,
+      var(--red) 0%,
+      var(--red) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 41.2% 85%,
+      var(--red) 0%,
+      var(--red) 5vmin,
+      transparent 0%
+    ),
+    /* yellow part */ linear-gradient(var(--yellow), var(--yellow)) 80% 60%/20vmin
+      10vmin no-repeat,
+    linear-gradient(var(--yellow), var(--yellow)) 57.5% 72.5%/5vmin 5vmin
+      no-repeat,
+    radial-gradient(
+      circle at 60% 74%,
+      var(--yellow) 0%,
+      var(--yellow) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 60% 58.7%,
+      var(--yellow) 0%,
+      var(--yellow) 5vmin,
+      transparent 0%
+    ),
+    radial-gradient(
+      circle at 85% 58.7%,
+      var(--yellow) 0%,
+      var(--yellow) 5vmin,
+      transparent 0%
+    );
+}
+
+/* radial-gradient(
+      circle at var(--po1),
+      var(--first) 0%,
+      var(--first) var(--size),
+      transparent 0%
+    ), */
