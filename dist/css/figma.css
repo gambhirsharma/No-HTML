@@ -25,8 +25,6 @@ https://www.twitter.com/gambhir_sharma/
 #figma {
   margin: 0;
   padding: 0;
-  height: 400px;
-  max-width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,28 +41,17 @@ https://www.twitter.com/gambhir_sharma/
   --fifth: #02d084;
   --sixth: red;
   /*  all dimensions var  */
-  --size: 7vmin;
   /*  Position  */
-  --po1: 33vmin 16vmin;
-  --po2: 47vmin 16vmin;
-  --po3: 33vmin 30vmin;
-  --po4: 47vmin 30vmin;
-  --po5: 33.14vmin 44vmin;
-}
-#figma::before {
-  position: absolute;
-  background: var(--white);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4vmin;
+  --po1: 30% 24%;
+  --po2: 56.6% 24%;
+  --po3: 30% 50.2%;
+  --po4: 56% 50.2%;
+  --po5: 30.8% 76%;
 }
 #figma::after {
-  height: 100%;
-  width: 100%;
-  left: 10%;
+  height: 400px;
+  width: 400px;
   position: absolute;
   background-repeat: no-repeat;
-  background: radial-gradient(circle at var(--po1), var(--first) 0%, var(--first) var(--size), transparent 0%), linear-gradient(var(--first), var(--first)) 32vmin 9vmin/8vmin 14vmin no-repeat, radial-gradient(circle at var(--po2), var(--second) 0%, var(--second) var(--size), transparent 0%), linear-gradient(var(--second), var(--second)) 39.5vmin 9vmin/8vmin 14vmin no-repeat, radial-gradient(circle at var(--po3), var(--third) 0%, var(--third) var(--size), transparent 0%), linear-gradient(var(--third), var(--third)) 32vmin 23vmin/8vmin 14vmin no-repeat, radial-gradient(circle at var(--po4), var(--fourth) 0%, var(--fourth) var(--size), transparent 0%), radial-gradient(circle at var(--po5), var(--fifth) 0%, var(--fifth) var(--size), transparent 0%), linear-gradient(var(--fifth), var(--fifth)) 32vmin 36vmin/8vmin 10vmin no-repeat;
+  background: radial-gradient(circle at var(--po1), var(--first) 0%, var(--first) 13%, transparent 0%), linear-gradient(var(--first), var(--first)) 32.5% 14.9%/17% 26.5% no-repeat, radial-gradient(circle at var(--po2), var(--second) 0%, var(--second) 14%, transparent 0%), linear-gradient(var(--second), var(--second)) 45.5% 14.9%/17% 26.5% no-repeat, radial-gradient(circle at var(--po3), var(--third) 0%, var(--third) 15%, transparent 0%), linear-gradient(var(--third), var(--third)) 32.5% 50.3%/17% 25.6% no-repeat, radial-gradient(circle at var(--po4), var(--fourth) 0%, var(--fourth) 17%, transparent 0%), radial-gradient(circle at var(--po5), var(--fifth) 0%, var(--fifth) 12%, transparent 0%), linear-gradient(var(--fifth), var(--fifth)) 32.5% 72.3%/17% 13% no-repeat;
 }/*# sourceMappingURL=figma.css.map */
