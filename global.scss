@@ -7,6 +7,7 @@ $size: 500px;
   box-sizing: border-box;
   font-family: Arial;
 }
+body{ overflow-y: hidden;}
 main{
   display: flex;
 }
@@ -34,4 +35,16 @@ a:hover{
   color: red;
   font-size: 1.3rem;
   font-weight: 900;
+}
+
+@media screen and (max-width: 500px) {
+  // body {
+  //   background-color: lightgreen;
+  // }
+  main {
+    flex-direction: column;
+  }
+  .input {
+    width: 100vw;
+  }
 }
