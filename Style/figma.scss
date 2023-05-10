@@ -57,20 +57,20 @@ $size: 15%;
   --po1: 30% 24%;
   --po2: 56.6% 24%;
   --po3: 30% 50.2%;
-  --po4: 56% 50.2%;
+  --po4: 56.9% 50.2%;
   --po5: 30.8% 76%;
 
-  &::before {
-    // position: absolute;
-    // // height: 100%;
-    // // width: 100%;
-    // // background: var(--white);
-    // position: relative;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // border-radius: 50%;
-  }
+  // &::before {
+  //   // position: absolute;
+  //   // // height: 100%;
+  //   // // width: 100%;
+  //   // // background: var(--white);
+  //   // position: relative;
+  //   // display: flex;
+  //   // justify-content: center;
+  //   // align-items: center;
+  //   // border-radius: 50%;
+  // }
   &::after {
     // height: 80vmin;
     // width: 80vmin;
@@ -85,21 +85,21 @@ $size: 15%;
         transparent 0%
       ),
       // x  y / width height
-      linear-gradient(var(--first), var(--first)) 32.5% 14.9% / 17% 26.5% no-repeat,
+      linear-gradient(var(--first), var(--first)) 34.9% 14.5% / 14% 26.9% no-repeat,
       radial-gradient(
         circle at var(--po2),
         var(--second) 0%,
         var(--second) $size - 1% ,
         transparent 0%
       ),
-       linear-gradient(var(--second), var(--second)) 45.5% 14.9% /  17% 26.5% no-repeat,
+       linear-gradient(var(--second), var(--second)) 45.5% 14.5% /  19.8% 26.9% no-repeat,
       radial-gradient(
         circle at var(--po3),
         var(--third) 0%,
-        var(--third) $size  ,
+        var(--third) $size,
         transparent 0%
       ),
-      linear-gradient(var(--third), var(--third)) 32.5% 50.3% / 17% 25.6% no-repeat,
+      linear-gradient(var(--third), var(--third)) 33.3% 50.3% / 16% 25.6% no-repeat,
       radial-gradient(
         circle at var(--po4),
         var(--fourth) 0%,
@@ -109,9 +109,9 @@ $size: 15%;
       radial-gradient(
         circle at var(--po5),
         var(--fifth) 0%,
-        var(--fifth) $size - 3,
+        var(--fifth) $size - 2%,
         transparent 0%
       ),
-       linear-gradient(var(--fifth), var(--fifth)) 32.5% 72.3% / 17% 13% no-repeat;
+       linear-gradient(var(--fifth), var(--fifth)) 32.5% 72.3% / 16.9% 13% no-repeat;
   }
 }
