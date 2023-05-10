@@ -26,6 +26,10 @@ https://www.twitter.com/gambhir_sharma/
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* variables */
   --black: #000;
   --white: #fff;
@@ -51,11 +55,9 @@ https://www.twitter.com/gambhir_sharma/
   background-color: var(--white);
 }
 #slack::after {
-  height: 70vmin;
-  width: 70vmin;
-  right: 10%;
-  top: 0%;
+  height: 400px;
+  width: 400px;
   position: absolute;
   background-repeat: no-repeat;
-  background: linear-gradient(var(--green), var(--green)) 57% 34%/8vmin 9vmin no-repeat, linear-gradient(var(--green), var(--green)) 67% 45.4%/4vmin 4vmin no-repeat, radial-gradient(circle at 69% 43%, var(--green) 0%, var(--green) 4vmin, transparent 0%), radial-gradient(circle at 56% 43%, var(--green) 0%, var(--green) 4vmin, transparent 0%), radial-gradient(circle at 56% 30%, var(--green) 0%, var(--green) 4vmin, transparent 0%), linear-gradient(var(--blue), var(--blue)) 35% 42%/9vmin 8vmin no-repeat, linear-gradient(var(--blue), var(--blue)) 45.7% 31.6%/4vmin 4vmin no-repeat, radial-gradient(circle at 43% 30%, var(--blue) 0%, var(--blue) 4vmin, transparent 0%), radial-gradient(circle at 30% 43%, var(--blue) 0%, var(--blue) 4vmin, transparent 0%), radial-gradient(circle at 43% 43%, var(--blue) 0%, var(--blue) 4vmin, transparent 0%), linear-gradient(var(--red), var(--red)) 42.3% 64%/8vmin 9vmin no-repeat, linear-gradient(var(--red), var(--red)) 32% 53%/4vmin 4vmin no-repeat, radial-gradient(circle at 30% 56%, var(--red) 0%, var(--red) 4vmin, transparent 0%), radial-gradient(circle at 43% 56%, var(--red) 0%, var(--red) 4vmin, transparent 0%), radial-gradient(circle at 43% 69%, var(--red) 0%, var(--red) 4vmin, transparent 0%), linear-gradient(var(--yellow), var(--yellow)) 64% 56.7%/9vmin 8vmin no-repeat, linear-gradient(var(--yellow), var(--yellow)) 53.2% 67.2%/4vmin 4vmin no-repeat, radial-gradient(circle at 56% 69%, var(--yellow) 0%, var(--yellow) 4vmin, transparent 0%), radial-gradient(circle at 56% 56%, var(--yellow) 0%, var(--yellow) 4vmin, transparent 0%), radial-gradient(circle at 69% 56%, var(--yellow) 0%, var(--yellow) 4vmin, transparent 0%);
+  background: linear-gradient(var(--green), var(--green)) 57% 34%/11% 14% no-repeat, linear-gradient(var(--green), var(--green)) 68.4% 44.3%/7% 7% no-repeat, radial-gradient(circle at 69% 43%, var(--green) 0%, var(--green) 6%, transparent 0%), radial-gradient(circle at 56% 43%, var(--green) 0%, var(--green) 7%, transparent 0%), radial-gradient(circle at 56% 30%, var(--green) 0%, var(--green) 6%, transparent 0%), linear-gradient(var(--blue), var(--blue)) 35% 42%/14% 11% no-repeat, linear-gradient(var(--blue), var(--blue)) 44.5% 30.4%/7% 7% no-repeat, radial-gradient(circle at 43% 30%, var(--blue) 0%, var(--blue) 6%, transparent 0%), radial-gradient(circle at 30% 43%, var(--blue) 0%, var(--blue) 6%, transparent 0%), radial-gradient(circle at 43% 43%, var(--blue) 0%, var(--blue) 7%, transparent 0%), linear-gradient(var(--red), var(--red)) 42.3% 64%/11% 14% no-repeat, linear-gradient(var(--red), var(--red)) 31% 54.3%/7% 7% no-repeat, radial-gradient(circle at 30% 56%, var(--red) 0%, var(--red) 6%, transparent 0%), radial-gradient(circle at 43% 56%, var(--red) 0%, var(--red) 7%, transparent 0%), radial-gradient(circle at 43% 69%, var(--red) 0%, var(--red) 6%, transparent 0%), linear-gradient(var(--yellow), var(--yellow)) 64% 56.7%/14% 11% no-repeat, linear-gradient(var(--yellow), var(--yellow)) 54.5% 68.2%/7% 7% no-repeat, radial-gradient(circle at 56% 69%, var(--yellow) 0%, var(--yellow) 6%, transparent 0%), radial-gradient(circle at 56% 56%, var(--yellow) 0%, var(--yellow) 7%, transparent 0%), radial-gradient(circle at 69% 56%, var(--yellow) 0%, var(--yellow) 6%, transparent 0%);
 }/*# sourceMappingURL=slack.css.map */

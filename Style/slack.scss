@@ -24,7 +24,9 @@ https://www.twitter.com/gambhir_sharma/
    $v-1: 30%;
    $v-2: 43%;
    $v-3: 56%;
-   $v-4: 69% ;
+   $v-4: 69%;
+
+   $size: 7%;
 
 
 *::before,
@@ -38,6 +40,10 @@ https://www.twitter.com/gambhir_sharma/
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   /* variables */
   --black: #000;
@@ -62,102 +68,95 @@ https://www.twitter.com/gambhir_sharma/
     background-color: var(--white);
   }
   &::after {
-    height: 70vmin;
-    width: 70vmin;
-    right: 10%;
-    top: 0%;
+    height: 400px;
+    width: 400px;
+    // right: 10%;
+    
     position: absolute;
     background-repeat: no-repeat;
     background:
   /* green part */ 
-  linear-gradient(var(--green), var(--green))
-        57% 34%/ 8vmin 9vmin no-repeat,
-  linear-gradient(var(--green), var(--green))
-        67% 45.4%/4vmin 4vmin no-repeat,
+  linear-gradient(var(--green), var(--green))57% 34%/ 11% 14% no-repeat,
+  linear-gradient(var(--green), var(--green))68.4% 44.3%/7% 7% no-repeat,
       radial-gradient(
         circle at $v-4 $h-2,
         var(--green) 0%,
-        var(--green) 4vmin,
+        var(--green) $size - 1%,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-3 $h-2,
         var(--green) 0%,
-        var(--green) 4vmin,
+        var(--green) $size,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-3 $h-1,
         var(--green) 0%,
-        var(--green) 4vmin,
+        var(--green) $size - 1%,
         transparent 0%
       ),
       /* blue part */ 
-      linear-gradient(var(--blue), var(--blue)) 35% 42%/ 9vmin
-        8vmin no-repeat,
-      linear-gradient(var(--blue), var(--blue)) 45.7% 31.6%/4vmin 4vmin
-        no-repeat,
+      linear-gradient(var(--blue), var(--blue)) 35% 42%/ 14% 11%  no-repeat,
+      linear-gradient(var(--blue), var(--blue)) 44.5% 30.4%/7% 7% no-repeat,
       radial-gradient(
         circle at $v-2 $h-1,
         var(--blue) 0%,
-        var(--blue) 4vmin,
+        var(--blue) $size - 1%,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-1 $h-2,
         var(--blue) 0%,
-        var(--blue) 4vmin,
+        var(--blue) $size - 1%,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-2 $h-2,
         var(--blue) 0%,
-        var(--blue) 4vmin,
+        var(--blue) $size,
         transparent 0%
       ),
       /* red-part */ 
-      linear-gradient(var(--red), var(--red)) 42.3% 64%/8vmin
-        9vmin no-repeat,
-      linear-gradient(var(--red), var(--red)) 32% 53%/4vmin 4vmin no-repeat,
+      linear-gradient(var(--red), var(--red)) 42.3% 64%/ 11% 14%  no-repeat,
+      linear-gradient(var(--red), var(--red)) 31% 54.3%/7% 7% no-repeat,
       radial-gradient(
         circle at $v-1 $h-3,
         var(--red) 0%,
-        var(--red) 4vmin,
+        var(--red) $size - 1%,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-2 $h-3,
         var(--red) 0%,
-        var(--red) 4vmin,
+        var(--red) $size,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-2 $h-4,
         var(--red) 0%,
-        var(--red) 4vmin,
+        var(--red) $size - 1%,
         transparent 0%
       ),
       /* yellow part */ 
-      linear-gradient(var(--yellow), var(--yellow)) 64% 56.7%/9vmin
-        8vmin no-repeat,
-      linear-gradient(var(--yellow), var(--yellow)) 53.2% 67.2%/4vmin 4vmin
-        no-repeat,
+      linear-gradient(var(--yellow), var(--yellow)) 64% 56.7%/14% 11%  no-repeat,
+      linear-gradient(var(--yellow), var(--yellow)) 54.5% 68.2%/ 7% 7% no-repeat,
       radial-gradient(
         circle at $v-3 $h-4,
         var(--yellow) 0%,
-        var(--yellow) 4vmin,
+        var(--yellow) $size - 1%,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-3 $h-3,
         var(--yellow) 0%,
-        var(--yellow) 4vmin,
+        var(--yellow) $size,
         transparent 0%
       ),
       radial-gradient(
         circle at $v-4 $h-3,
         var(--yellow) 0%,
-        var(--yellow) 4vmin,
+        var(--yellow) $size - 1%,
         transparent 0%
       );
   }
