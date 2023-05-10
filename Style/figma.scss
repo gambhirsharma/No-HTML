@@ -1,0 +1,117 @@
+/* Made by @gambhirsharma on 12 August 2022
+
+ ##########################################
+-- Concept used
+- Responsive Units (vmin)
+- Used Linear gradient to make boxes
+- Used Radial gradient to make circles
+- body::after,body::before
+
+-- Tested
+- Firefox (Windows/Ubuntu)
+- Brave
+- Edge
+
+Follow me on twitter for more
+https://www.twitter.com/gambhir_sharma/
+*/
+*::after,
+*::before {
+  content: "";
+  display: flex;
+  position: absolute;
+}
+
+#figma {
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  max-width: 50vw;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  background: #832f2f;
+  /* color var */
+  --black: #000;
+  --white: #fff;
+
+  --first: #f24d18;
+  --second: #ff7362;
+  --third: #a359ff;
+  --fourth: #13bdfe;
+  --fifth: #02d084;
+  --sixth: red;
+
+  /*  all dimensions var  */
+  --size: 7vmin;
+
+  /*  Position  */
+  --po1: 33vmin 16vmin;
+  --po2: 47vmin 16vmin;
+  --po3: 33vmin 30vmin;
+  --po4: 47vmin 30vmin;
+  --po5: 33.14vmin 44vmin;
+
+  &::before {
+    position: absolute;
+    // height: 100%;
+    // width: 100%;
+    background: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4vmin;
+  }
+  &::after {
+    // height: 80vmin;
+    // width: 80vmin;
+    height: 100%;
+    width: 100%;
+    left: 10%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background: radial-gradient(
+        circle at var(--po1),
+        var(--first) 0%,
+        var(--first) var(--size),
+        transparent 0%
+      ),
+      // x  y / width height
+      linear-gradient(var(--first), var(--first)) 32vmin 9vmin / 8vmin 14vmin
+        no-repeat,
+      radial-gradient(
+        circle at var(--po2),
+        var(--second) 0%,
+        var(--second) var(--size),
+        transparent 0%
+      ),
+      linear-gradient(var(--second), var(--second)) 39.5vmin 9vmin / 8vmin
+        14vmin no-repeat,
+      radial-gradient(
+        circle at var(--po3),
+        var(--third) 0%,
+        var(--third) var(--size),
+        transparent 0%
+      ),
+      linear-gradient(var(--third), var(--third)) 32vmin 23vmin / 8vmin 14vmin
+        no-repeat,
+      radial-gradient(
+        circle at var(--po4),
+        var(--fourth) 0%,
+        var(--fourth) var(--size),
+        transparent 0%
+      ),
+      radial-gradient(
+        circle at var(--po5),
+        var(--fifth) 0%,
+        var(--fifth) var(--size),
+        transparent 0%
+      ),
+      linear-gradient(var(--fifth), var(--fifth)) 32vmin 36vmin / 8vmin 10vmin
+        no-repeat;
+  }
+}
