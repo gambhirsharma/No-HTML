@@ -33,9 +33,10 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: red;
+  color: #fff;
   font-size: 1.3rem;
   font-weight: 900;
+  transition-duration: 1s;
 }
 
 @media screen and (max-width: 500px) {
